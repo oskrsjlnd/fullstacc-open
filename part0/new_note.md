@@ -29,6 +29,6 @@
     activate server
     server->>browser: [{"content": "mm","date"...}]
     deactivate server
-    Note left of server: Server warning 404
+
     Note right of browser: Browser renders notes by the callback func
 ```

@@ -25,6 +25,7 @@
     
     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
     activate server
+    Note left of server: Server log missing file
     server->>browser: 404 Not Found
     deactivate server
 
