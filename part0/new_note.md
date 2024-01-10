@@ -5,6 +5,7 @@
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
+    Note right of server: Note is added to /exampleapp/data.json
     server-->>browser: Redirect
     deactivate server
 
