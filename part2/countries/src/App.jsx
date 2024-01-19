@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import CountryList from './components/CountryList'
 
-const api_key = import.meta.env.VITE_SOME_KEY
+const api_key = import.meta.env.WEATHER_API_KEY
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -37,8 +37,7 @@ const App = () => {
     const currentTerm = event.target.name
     setSearchTerm(currentTerm)
     const country = calculateResults(currentTerm)
-    const result = [country, calculateWeather(country)]
-    setResults(result)
+    calculateWeather(country)
   }
 
   const calculateResults = (term) => {
