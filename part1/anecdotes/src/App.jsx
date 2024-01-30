@@ -48,7 +48,7 @@ const App = () => {
   return (
     <div>
       <Anecdote text='Anecdote of the day' anecdote={anecdotes[selected]} votes={votes[selected]} />
-      <Button text={'vote'} onClick={handleVote} />
+      <Button text={'vote'} onClick={console.log('x')} />
       <Button text={'Next anecdote'} onClick={handleNext} />
       <Anecdote text={'Anecdote with most votes'} anecdote={anecdotes[highestVote]} votes={votes[highestVote]} />
     </div>
